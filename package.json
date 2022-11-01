@@ -1,0 +1,28 @@
+{
+  "name": "html2pdf",
+  "version": "1.0.0",
+  "description": "Provides a REST endpoint to create PDF documents from an HTML string using Puppeteer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treibholzhq/html2pdf"
+  },
+  "author": "treibholzhq <mail@treibholzhq.com>",
+  "license": "MIT",
+  "keywords": [
+    "HTML",
+    "PDF",
+    "Puppeteer"
+  ],
+  "main": "src/index.mjs",
+  "dependencies": {
+    "fastify": "^4.9.2",
+    "puppeteer-core": "14.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.8",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
