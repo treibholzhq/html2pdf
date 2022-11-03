@@ -35,9 +35,7 @@ Once the container is running, you can send an HTTP POST request with a JSON bod
 ```json
 {
   "html": "<h1>Hello, World!</h1>",
-  "options": {
-    ...
-  }
+  "options": { }
 }
 ```
 
