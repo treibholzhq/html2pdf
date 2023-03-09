@@ -44,6 +44,7 @@ server.post('/', async (request, reply) => {
 
   const browser = await puppeteer.launch({
     executablePath: PUPPETEER_EXECUTABLE_PATH,
+    args: ['--no-sandbox'],
   });
 
   try {
