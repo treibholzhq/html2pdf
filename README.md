@@ -6,11 +6,8 @@ Available at [DockerHub](https://hub.docker.com/r/treibholzhq/html2pdf).
 
 ## Usage
 
-**Note:** This image needs to run in `privileged` mode, otherwise Puppeteer won't be able to launch the browser instance.
-
 ```sh
 docker run --rm -it \
-  --privileged \
   -p 5000:5000 \
   treibholzhq/html2pdf
 ```
@@ -22,7 +19,6 @@ If you do that, you need to send a bearer token with each request (see [Examples
 
 ```sh
 docker run --rm -it \
-  --privileged \
   -p 5000:5000 \
   -e API_KEY=mysecretkey
   treibholzhq/html2pdf
