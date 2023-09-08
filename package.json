@@ -15,6 +15,7 @@
   ],
   "main": "src/index.mjs",
   "dependencies": {
+    "bytes": "^3.1.2",
     "fastify": "^4.9.2",
     "puppeteer-core": "14.1.2"
   },

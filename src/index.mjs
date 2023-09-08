@@ -1,10 +1,12 @@
 import { basename } from 'path';
 import fastify from 'fastify';
+import bytes from 'bytes';
 import puppeteer from 'puppeteer-core';
 
-const { API_PORT = 5000, API_KEY, PUPPETEER_EXECUTABLE_PATH } = process.env;
+const { API_PORT = 5000, API_KEY, BODY_LIMIT = '1MB', PUPPETEER_EXECUTABLE_PATH } = process.env;
 
 const server = fastify({
+  bodyLimit: bytes.parse(BODY_LIMIT),
   logger: true,
 });
 
